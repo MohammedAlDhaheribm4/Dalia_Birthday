@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 17th Birthday, Dalia! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Welcome Screen -->
+        <section id="welcome" class="active">
+            <div class="glass-card">
+                <img src="assets/gift_box.png" alt="Magic Gift Box" class="mystery-box bouncing">
+                <h1 class="bounce-in">Wait, Dalia! 🛑</h1>
+                <p>A magical package has arrived, but it's protected by an extreme happiness firewall!</p>
+                <button id="start-btn" class="primary-btn">Bypass Security 🔓</button>
+            </div>
+        </section>
+
+        <!-- Game Screen -->
+        <section id="game">
+            <div class="game-container glass-card">
+                <div class="stage-indicator">
+                    <span id="stage-dot-1" class="dot active"></span>
+                    <span id="stage-dot-2" class="dot"></span>
+                    <span id="stage-dot-3" class="dot"></span>
+                </div>
+                <h2 id="game-title">The Hunt for the Gift! 🎁</h2>
+                <p id="game-desc">The box is shy. Find it 3 times to continue!</p>
+                <div class="score-board"><span id="score-label">Boxes Found:</span> <span id="score">0</span>/<span
+                        id="total-score">3</span></div>
+                <div id="game-area">
+                    <!-- Dynamic content will be injected here -->
+                </div>
+                <div class="hint">Look closely! 🔎</div>
+            </div>
+        </section>
+
+        <!-- Success Transition Screen -->
+        <section id="success">
+            <div class="glass-card">
+                <div class="icon-success">🎊</div>
+                <h2>Security Bypassed!</h2>
+                <p>The gift is finally ready for Dalia's eyes only...</p>
+                <button id="reveal-btn" class="primary-btn">OPEN THE GIFT! 🎁</button>
+            </div>
+        </section>
+
+        <!-- Final Birthday Message Screen -->
+        <section id="birthday">
+            <div class="confetti-container" id="confetti-canvas"></div>
+            <div class="birthday-card box-open-anim">
+                <h1 class="gradient-text glow-anim">🎉 Happy 17th Birthday, Dalia! 🎉</h1>
+                <div class="message-content">
+                    <p class="fade-in-up" style="animation-delay: 0.2s;">
+                        Celebrate this amazing milestone! May your 17th year sparkle with laughter, unforgettable
+                        memories, and endless joy! ✨
+                    </p>
+                    <p class="fade-in-up" style="animation-delay: 0.4s;">
+                        Keep shining bright and chasing your dreams. Wishing you a magical year filled with surprises,
+                        happiness, and all the adventures your heart desires! 🌈🎁
+                    </p>
+                </div>
+                <div class="interactive-decor">
+                    <span class="decor-item bubble">🎁</span>
+                    <span class="decor-item bubble">⭐</span>
+                    <span class="decor-item bubble">🎂</span>
+                    <span class="decor-item bubble">🎈</span>
+                </div>
+                <div class="cake-container bouncing">🎂</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
